@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */; };
+		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
 		97234EAA2C261B3F00B363EE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* main.swift */; };
+		97234EB42C2624A200B363EE /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB32C2624A200B363EE /* Option.swift */; };
+		97234EB62C2624AF00B363EE /* OptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB52C2624AF00B363EE /* OptionState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,8 @@
 /* Begin PBXFileReference section */
 		97234EA62C261B3F00B363EE /* AnsiTerminalTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnsiTerminalTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97234EA92C261B3F00B363EE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		97234EB32C2624A200B363EE /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		97234EB52C2624AF00B363EE /* OptionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */,
+				3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				97234EA92C261B3F00B363EE /* main.swift */,
+				97234EB32C2624A200B363EE /* Option.swift */,
+				97234EB52C2624AF00B363EE /* OptionState.swift */,
 			);
 			path = AnsiTerminalTest;
 			sourceTree = "<group>";
@@ -78,6 +88,10 @@
 			dependencies = (
 			);
 			name = AnsiTerminalTest;
+			packageProductDependencies = (
+				3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */,
+				3EA97D8995C565A9F8DDEED5 /* ANSITerminal */,
+			);
 			productName = AnsiTerminalTest;
 			productReference = 97234EA62C261B3F00B363EE /* AnsiTerminalTest */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +120,10 @@
 				Base,
 			);
 			mainGroup = 97234E9D2C261B3F00B363EE;
+			packageReferences = (
+				DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */,
+				5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 97234EA72C261B3F00B363EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97234EB42C2624A200B363EE /* Option.swift in Sources */,
 				97234EAA2C261B3F00B363EE /* main.swift in Sources */,
+				97234EB62C2624AF00B363EE /* OptionState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +309,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pakLebah/ANSITerminal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3EA97D8995C565A9F8DDEED5 /* ANSITerminal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */;
+			productName = ANSITerminal;
+		};
+		3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97234E9E2C261B3F00B363EE /* Project object */;
 }

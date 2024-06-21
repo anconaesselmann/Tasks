@@ -1,0 +1,26 @@
+{
+  "dependencies" : [
+    {
+      "id" : "CE3A63E8-DD3E-4DB7-95C5-65A9F8DDEED5",
+      "name" : "ANSITerminal",
+      "url" : "https://github.com/pakLebah/ANSITerminal.git",
+      "version" : "0.0.3"
+    },
+    {
+      "id" : "FDC44123-5534-486E-BA88-7A6FF0BD4B65",
+      "name" : "ArgumentParser",
+      "url" : "https://github.com/apple/swift-argument-parser",
+      "version" : "1.4.0"
+    }
+  ],
+  "targets" : [
+    {
+      "dependencies" : [
+        "ArgumentParser",
+        "ANSITerminal"
+      ],
+      "id" : "3EA97D89-EB29-499C-98AE-9BD589E3C48C",
+      "name" : "AnsiTerminalTest"
+    }
+  ]
+}
