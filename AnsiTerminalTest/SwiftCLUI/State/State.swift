@@ -5,6 +5,9 @@ import Foundation
 import Combine
 
 @propertyWrapper class State<T>: SwiftCLUIState {
+
+    var objectWillChange = PassthroughSubject<Void, Never>()
+    
     var wrappedValue: T {
         didSet {
             objectWillChange.send()
@@ -14,10 +17,4 @@ import Combine
     init(wrappedValue: T) {
         self.wrappedValue = wrappedValue
     }
-
-    var objectWillChange = PassthroughSubject<Void, Never>()
-}
-
-protocol SwiftCLUIState {
-    var objectWillChange: PassthroughSubject<Void, Never> { get }
 }

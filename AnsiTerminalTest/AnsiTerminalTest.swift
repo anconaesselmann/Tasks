@@ -7,9 +7,9 @@ import ArgumentParser
 @main
 struct AnsiTerminalTest: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "A command-line tool for managing Xcode project dependencies",
+        abstract: "A test application for SwiftCLUI",
         subcommands: [
-            Fruit.self
+            Task.self
         ]
     )
 
