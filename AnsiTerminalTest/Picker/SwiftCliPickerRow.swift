@@ -4,7 +4,7 @@
 import Foundation
 import ANSITerminal
 
-struct SwiftCliPickerRow: SwiftCliElementRow {
+struct SwiftCliPickerRow: SwiftCLUIViewRow {
     let id: UUID
 
     var isActive: Bool = false
@@ -12,8 +12,15 @@ struct SwiftCliPickerRow: SwiftCliElementRow {
     var title: String
 
     func draw(_ line: Int, _ col: Int) {
-        let title = isActive ? title : title.foreColor(250)
+        var title = isActive ? title : title.foreColor(8)
+        var width = 50
+        let paddingCount = max(0, width - title.count)
+        var padding = ""
+        if paddingCount > 0 {
+            padding = Array(repeating: " ", count: paddingCount).joined()
+        }
+
         moveTo(line, col)
-        write(title)
+        write((title + padding).backColor(214))
     }
 }

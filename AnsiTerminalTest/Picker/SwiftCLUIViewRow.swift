@@ -3,7 +3,7 @@
 
 import Foundation
 
-protocol SwiftCliElementRow {
+protocol SwiftCLUIViewRow {
     var id: UUID { get }
 
     func draw(_ row: Int, _ col: Int)

@@ -3,28 +3,19 @@
 
 import Foundation
 import ANSITerminal
+import Combine
 
-struct Picker<Element>
-    where Element: SwiftCliElementRow
+struct Picker<Element>: SwiftCLUIView
+    where Element: SwiftCLUIViewRow
 {
+    var id = UUID()
+    
     private let title: String
     private let elements: [UUID: Element]
+    private let order: [UUID]
+
+    @State
     private var active: Int = 0
-    private var line: Int = 0
-
-    private var titleHeight: Int {
-        title.split(separator: "\n").count
-    }
-
-    private var contentStart: Int {
-        line + titleHeight
-    }
-
-    private var contentEnd: Int {
-        contentStart + elements.count - 1
-    }
-
-    private var order: [UUID] = []
 
     init(title: String, elements: [Element]) {
         self.title = title
@@ -34,75 +25,93 @@ struct Picker<Element>
         self.order = elements.map { $0.id }
     }
 
-    private func drawHeader() {
-        moveTo(line, 0)
-        write("◆".foreColor(81).bold)
-        moveRight()
-        write(title)
-    }
-
-    private func drawFooter() {
-        let row = line + contentEnd - 1
-        moveTo(row, 0)
-        write("└".foreColor(81))
-    }
-
-    mutating func draw(at row: Int) {
-        self.line = row
-        drawHeader()
-        (contentStart...contentEnd).forEach { line in
+    func draw(at row: Int) -> Range<Int> {
+        drawHeader(row)
+        (contentStart(row)...contentEnd(row)).forEach { line in
             moveTo(line, 0)
             write("│".foreColor(81))
         }
-        drawFooter()
-        let _ = update()
+        drawFooter(row)
+        let _ = update(at: row)
+        return row..<(footerStart(row) + 1)
     }
 
-    func update() {
-        let row = contentStart
+    func update(at line: Int) {
         for (index, id) in order.enumerated() {
             guard let element = elements[id] else {
                 fatalError()
                 continue
             }
-            let line = row + index
-            let stateIndicator = index == active ? "●".lightGreen : "○".foreColor(250)
+            let line = contentStart(line) + index
+            let stateIndicator = index == active
+                ? "●".lightGreen
+                : "○".foreColor(250)
             moveTo(line, 3)
             write(stateIndicator)
             element.draw(line, 5)
         }
     }
 
-    mutating func keyPressed() -> Bool {
-        let char = readChar()
+    func keyPressed(
+        _ line: Int,
+        char: Character,
+        key: (code: ANSIKeyCode, meta: [ANSIMetaCode])
+    ) -> Bool {
         if let intValue = Int(String(char)), intValue < elements.count {
             setActive(intValue)
-            update()
+            update(at: line)
         } else {
             if char == NonPrintableChar.enter.char() {
                 return true
             }
-            let key = readKey()
             if key.code == .up {
                 prevActive()
-                update()
+                update(at: line)
             } else if key.code == .down {
                 nextActive()
-                update()
+                update(at: line)
             }
         }
         return false
     }
 
-    private mutating func nextActive() {
+    private var titleHeight: Int {
+        title.split(separator: "\n").count
+    }
+
+    private func contentStart(_ line: Int) -> Int {
+        line + titleHeight
+    }
+
+    private func contentEnd(_ line: Int) -> Int {
+        contentStart(line) + elements.count - 1
+    }
+
+    private func footerStart(_ line: Int) -> Int {
+        contentEnd(line) + 1
+    }
+
+    private func drawHeader(_ line: Int) {
+        moveTo(line, 0)
+        write("◆".foreColor(81).bold)
+        moveRight()
+        write(title)
+    }
+
+    private func drawFooter(_ line: Int) {
+        moveTo(footerStart(line), 0)
+        write("└".foreColor(81))
+    }
+
+    private func nextActive() {
         active = min(order.count - 1, active + 1)
     }
 
-    private mutating func prevActive() {
+    private func prevActive() {
         active = max(0, active - 1)
     }
 
-    private mutating func setActive(_ value: Int) {
+    private func setActive(_ value: Int) {
         active = min(max(0, value), elements.count - 1)
     }
 }

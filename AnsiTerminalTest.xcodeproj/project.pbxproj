@@ -13,7 +13,11 @@
 		97234EB82C26353E00B363EE /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB72C26353E00B363EE /* Fruit.swift */; };
 		97234EBB2C26356100B363EE /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBA2C26356100B363EE /* Picker.swift */; };
 		97234EBD2C26ABA200B363EE /* SwiftCliPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBC2C26ABA200B363EE /* SwiftCliPickerRow.swift */; };
-		97234EC02C26B11800B363EE /* SwiftCliElementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBF2C26B11800B363EE /* SwiftCliElementRow.swift */; };
+		97234EC02C26B11800B363EE /* SwiftCLUIViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBF2C26B11800B363EE /* SwiftCLUIViewRow.swift */; };
+		97234EC32C26B6EB00B363EE /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC22C26B6EB00B363EE /* VStack.swift */; };
+		97234EC52C26BF9200B363EE /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC42C26BF9200B363EE /* Renderer.swift */; };
+		97234EC72C26C83C00B363EE /* SwiftCLUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC62C26C83C00B363EE /* SwiftCLUIView.swift */; };
+		97234EC92C26C86500B363EE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC82C26C86500B363EE /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +38,11 @@
 		97234EB72C26353E00B363EE /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		97234EBA2C26356100B363EE /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		97234EBC2C26ABA200B363EE /* SwiftCliPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCliPickerRow.swift; sourceTree = "<group>"; };
-		97234EBF2C26B11800B363EE /* SwiftCliElementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCliElementRow.swift; sourceTree = "<group>"; };
+		97234EBF2C26B11800B363EE /* SwiftCLUIViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCLUIViewRow.swift; sourceTree = "<group>"; };
+		97234EC22C26B6EB00B363EE /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
+		97234EC42C26BF9200B363EE /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		97234EC62C26C83C00B363EE /* SwiftCLUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCLUIView.swift; sourceTree = "<group>"; };
+		97234EC82C26C86500B363EE /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 			children = (
 				97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */,
 				97234EB72C26353E00B363EE /* Fruit.swift */,
+				97234EC42C26BF9200B363EE /* Renderer.swift */,
+				97234EC62C26C83C00B363EE /* SwiftCLUIView.swift */,
+				97234EC82C26C86500B363EE /* State.swift */,
+				97234EC12C26B6E000B363EE /* VStack */,
 				97234EBE2C26ABC100B363EE /* Picker */,
 			);
 			path = AnsiTerminalTest;
@@ -80,10 +92,18 @@
 			isa = PBXGroup;
 			children = (
 				97234EBA2C26356100B363EE /* Picker.swift */,
-				97234EBF2C26B11800B363EE /* SwiftCliElementRow.swift */,
+				97234EBF2C26B11800B363EE /* SwiftCLUIViewRow.swift */,
 				97234EBC2C26ABA200B363EE /* SwiftCliPickerRow.swift */,
 			);
 			path = Picker;
+			sourceTree = "<group>";
+		};
+		97234EC12C26B6E000B363EE /* VStack */ = {
+			isa = PBXGroup;
+			children = (
+				97234EC22C26B6EB00B363EE /* VStack.swift */,
+			);
+			path = VStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +174,13 @@
 			files = (
 				97234EB82C26353E00B363EE /* Fruit.swift in Sources */,
 				97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */,
-				97234EC02C26B11800B363EE /* SwiftCliElementRow.swift in Sources */,
+				97234EC52C26BF9200B363EE /* Renderer.swift in Sources */,
+				97234EC72C26C83C00B363EE /* SwiftCLUIView.swift in Sources */,
+				97234EC02C26B11800B363EE /* SwiftCLUIViewRow.swift in Sources */,
+				97234EC92C26C86500B363EE /* State.swift in Sources */,
 				97234EBD2C26ABA200B363EE /* SwiftCliPickerRow.swift in Sources */,
 				97234EBB2C26356100B363EE /* Picker.swift in Sources */,
+				97234EC32C26B6EB00B363EE /* VStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
