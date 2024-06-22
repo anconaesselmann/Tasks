@@ -7,21 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */; };
-		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
 		97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */; };
 		97234EB82C26353E00B363EE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB72C26353E00B363EE /* Task.swift */; };
-		97234EC32C26B6EB00B363EE /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC22C26B6EB00B363EE /* VStack.swift */; };
-		97234EC52C26BF9200B363EE /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC42C26BF9200B363EE /* Renderer.swift */; };
-		97234EC92C26C86500B363EE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EC82C26C86500B363EE /* State.swift */; };
-		97234ECC2C26F05500B363EE /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234ECB2C26F05500B363EE /* HStack.swift */; };
-		97234ECE2C27758800B363EE /* ElementsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234ECD2C27758800B363EE /* ElementsObserver.swift */; };
-		97234ED12C2776B100B363EE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234ED02C2776B100B363EE /* View.swift */; };
-		97234ED32C2776C700B363EE /* String+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234ED22C2776C700B363EE /* String+View.swift */; };
-		97234ED62C2776F300B363EE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234ED52C2776F300B363EE /* Text.swift */; };
-		97234ED92C2777D800B363EE /* SwiftCLUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234ED82C2777D800B363EE /* SwiftCLUIState.swift */; };
-		97234EDB2C277FC000B363EE /* KeyPressObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EDA2C277FC000B363EE /* KeyPressObserver.swift */; };
-		97234EDE2C2782A300B363EE /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EDD2C2782A300B363EE /* Picker.swift */; };
+		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
+		3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */; };
+		3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B7D523750498E081 /* SwiftCLUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,17 +30,6 @@
 		97234EA62C261B3F00B363EE /* AnsiTerminalTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnsiTerminalTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsiTerminalTest.swift; sourceTree = "<group>"; };
 		97234EB72C26353E00B363EE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		97234EC22C26B6EB00B363EE /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
-		97234EC42C26BF9200B363EE /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		97234EC82C26C86500B363EE /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		97234ECB2C26F05500B363EE /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
-		97234ECD2C27758800B363EE /* ElementsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsObserver.swift; sourceTree = "<group>"; };
-		97234ED02C2776B100B363EE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		97234ED22C2776C700B363EE /* String+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+View.swift"; sourceTree = "<group>"; };
-		97234ED52C2776F300B363EE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
-		97234ED82C2777D800B363EE /* SwiftCLUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCLUIState.swift; sourceTree = "<group>"; };
-		97234EDA2C277FC000B363EE /* KeyPressObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPressObserver.swift; sourceTree = "<group>"; };
-		97234EDD2C2782A300B363EE /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */,
 				3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */,
+				3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */,
+				3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,51 +67,8 @@
 			children = (
 				97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */,
 				97234EB72C26353E00B363EE /* Task.swift */,
-				97234EC42C26BF9200B363EE /* Renderer.swift */,
-				97234ECF2C2776A500B363EE /* SwiftCLUI */,
 			);
 			path = AnsiTerminalTest;
-			sourceTree = "<group>";
-		};
-		97234EC12C26B6E000B363EE /* Stacks */ = {
-			isa = PBXGroup;
-			children = (
-				97234ECB2C26F05500B363EE /* HStack.swift */,
-				97234EC22C26B6EB00B363EE /* VStack.swift */,
-			);
-			path = Stacks;
-			sourceTree = "<group>";
-		};
-		97234ECF2C2776A500B363EE /* SwiftCLUI */ = {
-			isa = PBXGroup;
-			children = (
-				97234ED72C27773900B363EE /* State */,
-				97234ED02C2776B100B363EE /* View.swift */,
-				97234ED22C2776C700B363EE /* String+View.swift */,
-				97234ED42C2776EC00B363EE /* Views */,
-				97234EDA2C277FC000B363EE /* KeyPressObserver.swift */,
-			);
-			path = SwiftCLUI;
-			sourceTree = "<group>";
-		};
-		97234ED42C2776EC00B363EE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				97234ED52C2776F300B363EE /* Text.swift */,
-				97234EDD2C2782A300B363EE /* Picker.swift */,
-				97234EC12C26B6E000B363EE /* Stacks */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		97234ED72C27773900B363EE /* State */ = {
-			isa = PBXGroup;
-			children = (
-				97234EC82C26C86500B363EE /* State.swift */,
-				97234ECD2C27758800B363EE /* ElementsObserver.swift */,
-				97234ED82C2777D800B363EE /* SwiftCLUIState.swift */,
-			);
-			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +88,9 @@
 			);
 			name = AnsiTerminalTest;
 			packageProductDependencies = (
-				3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */,
 				3EA97D8995C565A9F8DDEED5 /* ANSITerminal */,
+				3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */,
+				3EA97D89B7D523750498E081 /* SwiftCLUI */,
 			);
 			productName = AnsiTerminalTest;
 			productReference = 97234EA62C261B3F00B363EE /* AnsiTerminalTest */;
@@ -184,7 +122,8 @@
 			mainGroup = 97234E9D2C261B3F00B363EE;
 			packageReferences = (
 				DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */,
-				5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "ArgumentParser" */,
+				20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */,
 			);
 			productRefGroup = 97234EA72C261B3F00B363EE /* Products */;
 			projectDirPath = "";
@@ -201,18 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97234EB82C26353E00B363EE /* Task.swift in Sources */,
-				97234EDE2C2782A300B363EE /* Picker.swift in Sources */,
 				97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */,
-				97234ED32C2776C700B363EE /* String+View.swift in Sources */,
-				97234ECE2C27758800B363EE /* ElementsObserver.swift in Sources */,
-				97234EC52C26BF9200B363EE /* Renderer.swift in Sources */,
-				97234EC92C26C86500B363EE /* State.swift in Sources */,
-				97234ED92C2777D800B363EE /* SwiftCLUIState.swift in Sources */,
-				97234ED12C2776B100B363EE /* View.swift in Sources */,
-				97234ED62C2776F300B363EE /* Text.swift in Sources */,
-				97234ECC2C26F05500B363EE /* HStack.swift in Sources */,
-				97234EC32C26B6EB00B363EE /* VStack.swift in Sources */,
-				97234EDB2C277FC000B363EE /* KeyPressObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +311,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+		DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pakLebah/ANSITerminal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "ArgumentParser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-argument-parser";
 			requirement = {
@@ -391,12 +327,12 @@
 				minimumVersion = 1.4.0;
 			};
 		};
-		DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
+		20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pakLebah/ANSITerminal.git";
+			repositoryURL = "https://github.com/anconaesselmann/SwiftCLUI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.3;
+				minimumVersion = 0.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -409,8 +345,13 @@
 		};
 		3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			package = 5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "ArgumentParser" */;
 			productName = ArgumentParser;
+		};
+		3EA97D89B7D523750498E081 /* SwiftCLUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */;
+			productName = SwiftCLUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

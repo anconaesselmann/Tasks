@@ -1,5 +1,5 @@
 {
-  "originHash" : "2111c2b23a3887b1b86641cdbd4d0208547d74c1259f96d94c83059ae630e414",
+  "originHash" : "1438f2666a364dee54730ddd76a6f2fc3f3585ba87d0fa56d13433aeb6b482ba",
   "pins" : [
     {
       "identity" : "ansiterminal",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
         "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "swiftclui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/anconaesselmann/SwiftCLUI",
+      "state" : {
+        "revision" : "a54f96a7388850a5193e09cfe0b8c0f7ba365625",
+        "version" : "0.0.1"
       }
     }
   ],
