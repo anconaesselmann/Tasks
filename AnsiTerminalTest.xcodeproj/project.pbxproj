@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */; };
 		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
-		97234EAA2C261B3F00B363EE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* main.swift */; };
-		97234EB42C2624A200B363EE /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB32C2624A200B363EE /* Option.swift */; };
-		97234EB62C2624AF00B363EE /* OptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB52C2624AF00B363EE /* OptionState.swift */; };
+		97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */; };
+		97234EB82C26353E00B363EE /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB72C26353E00B363EE /* Fruit.swift */; };
+		97234EBB2C26356100B363EE /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBA2C26356100B363EE /* Picker.swift */; };
+		97234EBD2C26ABA200B363EE /* SwiftCliPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBC2C26ABA200B363EE /* SwiftCliPickerRow.swift */; };
+		97234EC02C26B11800B363EE /* SwiftCliElementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EBF2C26B11800B363EE /* SwiftCliElementRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +30,11 @@
 
 /* Begin PBXFileReference section */
 		97234EA62C261B3F00B363EE /* AnsiTerminalTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnsiTerminalTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97234EA92C261B3F00B363EE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		97234EB32C2624A200B363EE /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		97234EB52C2624AF00B363EE /* OptionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionState.swift; sourceTree = "<group>"; };
+		97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsiTerminalTest.swift; sourceTree = "<group>"; };
+		97234EB72C26353E00B363EE /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		97234EBA2C26356100B363EE /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		97234EBC2C26ABA200B363EE /* SwiftCliPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCliPickerRow.swift; sourceTree = "<group>"; };
+		97234EBF2C26B11800B363EE /* SwiftCliElementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCliElementRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +69,21 @@
 		97234EA82C261B3F00B363EE /* AnsiTerminalTest */ = {
 			isa = PBXGroup;
 			children = (
-				97234EA92C261B3F00B363EE /* main.swift */,
-				97234EB32C2624A200B363EE /* Option.swift */,
-				97234EB52C2624AF00B363EE /* OptionState.swift */,
+				97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */,
+				97234EB72C26353E00B363EE /* Fruit.swift */,
+				97234EBE2C26ABC100B363EE /* Picker */,
 			);
 			path = AnsiTerminalTest;
+			sourceTree = "<group>";
+		};
+		97234EBE2C26ABC100B363EE /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				97234EBA2C26356100B363EE /* Picker.swift */,
+				97234EBF2C26B11800B363EE /* SwiftCliElementRow.swift */,
+				97234EBC2C26ABA200B363EE /* SwiftCliPickerRow.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97234EB42C2624A200B363EE /* Option.swift in Sources */,
-				97234EAA2C261B3F00B363EE /* main.swift in Sources */,
-				97234EB62C2624AF00B363EE /* OptionState.swift in Sources */,
+				97234EB82C26353E00B363EE /* Fruit.swift in Sources */,
+				97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */,
+				97234EC02C26B11800B363EE /* SwiftCliElementRow.swift in Sources */,
+				97234EBD2C26ABA200B363EE /* SwiftCliPickerRow.swift in Sources */,
+				97234EBB2C26356100B363EE /* Picker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
