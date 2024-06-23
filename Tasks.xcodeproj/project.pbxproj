@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B7D523750498E081 /* SwiftCLUI */; };
 		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
 		97234EAA2C261B3F00B363EE /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* Tasks.swift */; };
-		97234EB82C26353E00B363EE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB72C26353E00B363EE /* Task.swift */; };
-		97234EE02C27E45A00B363EE /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EDF2C27E45A00B363EE /* TodoApp.swift */; };
-		3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */; };
-		3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B7D523750498E081 /* SwiftCLUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +27,6 @@
 /* Begin PBXFileReference section */
 		97234EA62C261B3F00B363EE /* Tasks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tasks; sourceTree = BUILT_PRODUCTS_DIR; };
 		97234EA92C261B3F00B363EE /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
-		97234EB72C26353E00B363EE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		97234EDF2C27E45A00B363EE /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +35,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */,
-				3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */,
 				3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,8 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				97234EA92C261B3F00B363EE /* Tasks.swift */,
-				97234EB72C26353E00B363EE /* Task.swift */,
-				97234EDF2C27E45A00B363EE /* TodoApp.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -92,7 +84,6 @@
 			name = Tasks;
 			packageProductDependencies = (
 				3EA97D8995C565A9F8DDEED5 /* ANSITerminal */,
-				3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */,
 				3EA97D89B7D523750498E081 /* SwiftCLUI */,
 			);
 			productName = Tasks;
@@ -125,8 +116,7 @@
 			mainGroup = 97234E9D2C261B3F00B363EE;
 			packageReferences = (
 				DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */,
-				5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "ArgumentParser" */,
-				20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */,
+				180E894057325D7B10548D02 /* XCLocalSwiftPackageReference "/Users/axelanconaesselmann/dev/SwiftCLUI" */,
 			);
 			productRefGroup = 97234EA72C261B3F00B363EE /* Products */;
 			projectDirPath = "";
@@ -142,9 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97234EB82C26353E00B363EE /* Task.swift in Sources */,
 				97234EAA2C261B3F00B363EE /* Tasks.swift in Sources */,
-				97234EE02C27E45A00B363EE /* TodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +302,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		180E894057325D7B10548D02 /* XCLocalSwiftPackageReference "/Users/axelanconaesselmann/dev/SwiftCLUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = /Users/axelanconaesselmann/dev/SwiftCLUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -321,22 +316,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.0.3;
-			};
-		};
-		5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "ArgumentParser" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-argument-parser";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.0;
-			};
-		};
-		20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/anconaesselmann/SwiftCLUI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -347,14 +326,8 @@
 			package = DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */;
 			productName = ANSITerminal;
 		};
-		3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5534486EBA887A6FF0BD4B65 /* XCRemoteSwiftPackageReference "ArgumentParser" */;
-			productName = ArgumentParser;
-		};
 		3EA97D89B7D523750498E081 /* SwiftCLUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */;
 			productName = SwiftCLUI;
 		};
 /* End XCSwiftPackageProductDependency section */

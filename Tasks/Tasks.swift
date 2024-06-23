@@ -2,16 +2,18 @@
 //
 
 import Foundation
-import ArgumentParser
+import SwiftCLUI
 
 @main
-struct Tasks: AsyncParsableCommand {
-    static let configuration = CommandConfiguration(
-        abstract: "A test application for SwiftCLUI",
-        subcommands: [
-            Task.self
-        ]
-    )
+struct TodoApp: App {
 
-    init() { }
+    var body: VStack
+
+    init() {
+        let tasks = ["Feed the cats", "Let the chickens out", "Take out the trash", "Clean litter boxes", "Buy milk"]
+        body = VStack(spacing: 2) {
+            Text("Tasks app")
+            Picker(elements: tasks)
+        }
+    }
 }

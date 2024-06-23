@@ -1,5 +1,5 @@
 {
-  "originHash" : "1438f2666a364dee54730ddd76a6f2fc3f3585ba87d0fa56d13433aeb6b482ba",
+  "originHash" : "350d9cfad731580377d16d5019f53991265ee8ecef8cf265b1adef7f9a541685",
   "pins" : [
     {
       "identity" : "ansiterminal",
@@ -8,24 +8,6 @@
       "state" : {
         "revision" : "8e24fab68c660eca1244a95019ec69a11400d62b",
         "version" : "0.0.3"
-      }
-    },
-    {
-      "identity" : "swift-argument-parser",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-argument-parser",
-      "state" : {
-        "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
-        "version" : "1.4.0"
-      }
-    },
-    {
-      "identity" : "swiftclui",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/anconaesselmann/SwiftCLUI",
-      "state" : {
-        "revision" : "9520b7ebcd18fd5f4e8d17599d907d087cdf55fb",
-        "version" : "0.0.2"
       }
     }
   ],

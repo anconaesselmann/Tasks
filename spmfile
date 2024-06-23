@@ -1,12 +1,6 @@
 {
   "dependencies" : [
     {
-      "id" : "FDC44123-5534-486E-BA88-7A6FF0BD4B65",
-      "name" : "ArgumentParser",
-      "url" : "https://github.com/apple/swift-argument-parser",
-      "version" : "1.4.0"
-    },
-    {
       "id" : "45A48145-20D8-4501-B7D5-23750498E081",
       "name" : "SwiftCLUI",
       "url": "https://github.com/anconaesselmann/SwiftCLUI",
@@ -16,7 +10,6 @@
   "targets" : [
     {
       "dependencies" : [
-        "ArgumentParser",
         "SwiftCLUI"
       ],
       "id" : "3EA97D89-EB29-499C-98AE-9BD589E3C48C",
