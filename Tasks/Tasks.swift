@@ -1,7 +1,6 @@
 //  Created by Axel Ancona Esselmann on 6/21/24.
 //
 
-import Foundation
 import SwiftCLUI
 
 @main
@@ -15,6 +14,4 @@ struct TodoApp: App {
             Picker(elements: tasks)
         }
     }
-
-    init() { }
 }
