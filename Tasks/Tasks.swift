@@ -5,7 +5,7 @@ import Foundation
 import ArgumentParser
 
 @main
-struct AnsiTerminalTest: AsyncParsableCommand {
+struct Tasks: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "A test application for SwiftCLUI",
         subcommands: [

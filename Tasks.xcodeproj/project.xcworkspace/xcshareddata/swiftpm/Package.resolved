@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/anconaesselmann/SwiftCLUI",
       "state" : {
-        "revision" : "a54f96a7388850a5193e09cfe0b8c0f7ba365625",
-        "version" : "0.0.1"
+        "revision" : "9520b7ebcd18fd5f4e8d17599d907d087cdf55fb",
+        "version" : "0.0.2"
       }
     }
   ],

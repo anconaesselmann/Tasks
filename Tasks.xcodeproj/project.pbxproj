@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */; };
-		97234EB82C26353E00B363EE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB72C26353E00B363EE /* Task.swift */; };
 		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
+		97234EAA2C261B3F00B363EE /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* Tasks.swift */; };
+		97234EB82C26353E00B363EE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EB72C26353E00B363EE /* Task.swift */; };
+		97234EE02C27E45A00B363EE /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EDF2C27E45A00B363EE /* TodoApp.swift */; };
 		3EA97D895534486EBA887A6F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */; };
 		3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B7D523750498E081 /* SwiftCLUI */; };
 /* End PBXBuildFile section */
@@ -27,9 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		97234EA62C261B3F00B363EE /* AnsiTerminalTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnsiTerminalTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsiTerminalTest.swift; sourceTree = "<group>"; };
+		97234EA62C261B3F00B363EE /* Tasks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tasks; sourceTree = BUILT_PRODUCTS_DIR; };
+		97234EA92C261B3F00B363EE /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		97234EB72C26353E00B363EE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		97234EDF2C27E45A00B363EE /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		97234E9D2C261B3F00B363EE = {
 			isa = PBXGroup;
 			children = (
-				97234EA82C261B3F00B363EE /* AnsiTerminalTest */,
+				97234EA82C261B3F00B363EE /* Tasks */,
 				97234EA72C261B3F00B363EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,26 +59,27 @@
 		97234EA72C261B3F00B363EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97234EA62C261B3F00B363EE /* AnsiTerminalTest */,
+				97234EA62C261B3F00B363EE /* Tasks */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97234EA82C261B3F00B363EE /* AnsiTerminalTest */ = {
+		97234EA82C261B3F00B363EE /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				97234EA92C261B3F00B363EE /* AnsiTerminalTest.swift */,
+				97234EA92C261B3F00B363EE /* Tasks.swift */,
 				97234EB72C26353E00B363EE /* Task.swift */,
+				97234EDF2C27E45A00B363EE /* TodoApp.swift */,
 			);
-			path = AnsiTerminalTest;
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		97234EA52C261B3F00B363EE /* AnsiTerminalTest */ = {
+		97234EA52C261B3F00B363EE /* Tasks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97234EAD2C261B3F00B363EE /* Build configuration list for PBXNativeTarget "AnsiTerminalTest" */;
+			buildConfigurationList = 97234EAD2C261B3F00B363EE /* Build configuration list for PBXNativeTarget "Tasks" */;
 			buildPhases = (
 				97234EA22C261B3F00B363EE /* Sources */,
 				97234EA32C261B3F00B363EE /* Frameworks */,
@@ -86,14 +89,14 @@
 			);
 			dependencies = (
 			);
-			name = AnsiTerminalTest;
+			name = Tasks;
 			packageProductDependencies = (
 				3EA97D8995C565A9F8DDEED5 /* ANSITerminal */,
 				3EA97D89BA887A6FF0BD4B65 /* ArgumentParser */,
 				3EA97D89B7D523750498E081 /* SwiftCLUI */,
 			);
-			productName = AnsiTerminalTest;
-			productReference = 97234EA62C261B3F00B363EE /* AnsiTerminalTest */;
+			productName = Tasks;
+			productReference = 97234EA62C261B3F00B363EE /* Tasks */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 97234EA12C261B3F00B363EE /* Build configuration list for PBXProject "AnsiTerminalTest" */;
+			buildConfigurationList = 97234EA12C261B3F00B363EE /* Build configuration list for PBXProject "Tasks" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97234EA52C261B3F00B363EE /* AnsiTerminalTest */,
+				97234EA52C261B3F00B363EE /* Tasks */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97234EB82C26353E00B363EE /* Task.swift in Sources */,
-				97234EAA2C261B3F00B363EE /* AnsiTerminalTest.swift in Sources */,
+				97234EAA2C261B3F00B363EE /* Tasks.swift in Sources */,
+				97234EE02C27E45A00B363EE /* TodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97234EA12C261B3F00B363EE /* Build configuration list for PBXProject "AnsiTerminalTest" */ = {
+		97234EA12C261B3F00B363EE /* Build configuration list for PBXProject "Tasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97234EAB2C261B3F00B363EE /* Debug */,
@@ -299,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97234EAD2C261B3F00B363EE /* Build configuration list for PBXNativeTarget "AnsiTerminalTest" */ = {
+		97234EAD2C261B3F00B363EE /* Build configuration list for PBXNativeTarget "Tasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97234EAE2C261B3F00B363EE /* Debug */,

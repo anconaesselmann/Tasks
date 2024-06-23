@@ -3,7 +3,6 @@
 
 import Foundation
 import ArgumentParser
-import SwiftCLUI
 
 struct Task: AsyncParsableCommand {
 
@@ -20,11 +19,7 @@ struct Task: AsyncParsableCommand {
     func run() throws {
         let tasks = ["Feed the cats", "Let the chickens out", "Take out the trash", "Clean litter boxes", "Buy milk"]
         if interactive {
-            App(
-                VStack([
-                    Picker(elements: tasks),
-                ])
-            ).run()
+            TodoApp(tasks: tasks).run()
         } else {
             for task in tasks {
                 print(task)
