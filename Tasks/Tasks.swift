@@ -7,13 +7,14 @@ import SwiftCLUI
 @main
 struct TodoApp: App {
 
-    var body: VStack
+    let tasks = ["Feed the cats", "Let the chickens out", "Take out the trash", "Clean litter boxes", "Buy milk"]
 
-    init() {
-        let tasks = ["Feed the cats", "Let the chickens out", "Take out the trash", "Clean litter boxes", "Buy milk"]
-        body = VStack(spacing: 2) {
+    var body: some View {
+        VStack(spacing: 2) {
             Text("Tasks app")
             Picker(elements: tasks)
         }
     }
+
+    init() { }
 }
