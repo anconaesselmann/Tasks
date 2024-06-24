@@ -2,6 +2,15 @@
   "originHash" : "350d9cfad731580377d16d5019f53991265ee8ecef8cf265b1adef7f9a541685",
   "pins" : [
     {
+      "identity" : "ansi256color",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/anconaesselmann/Ansi256Color",
+      "state" : {
+        "revision" : "500cc5dd34ac7b7518f40a5fd00218cb90e9ceea",
+        "version" : "0.0.1"
+      }
+    },
+    {
       "identity" : "ansiterminal",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pakLebah/ANSITerminal.git",
