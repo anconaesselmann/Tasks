@@ -4,13 +4,14 @@
       "id" : "45A48145-20D8-4501-B7D5-23750498E081",
       "name" : "SwiftCLUI",
       "url": "https://github.com/anconaesselmann/SwiftCLUI",
-      "version" : "0.0.1"
+      "version" : "0.0.3"
     }
   ],
   "targets" : [
     {
       "dependencies" : [
-        "SwiftCLUI"
+        "SwiftCLUI",
+        "Ansi256Color"
       ],
       "id" : "3EA97D89-EB29-499C-98AE-9BD589E3C48C",
       "name" : "Tasks"

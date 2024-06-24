@@ -1,13 +1,13 @@
 {
-  "originHash" : "350d9cfad731580377d16d5019f53991265ee8ecef8cf265b1adef7f9a541685",
+  "originHash" : "96d59d6bd349deca48d6a3318a4db2f2129070be816ffaab793698598ae5988e",
   "pins" : [
     {
       "identity" : "ansi256color",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/anconaesselmann/Ansi256Color",
       "state" : {
-        "revision" : "500cc5dd34ac7b7518f40a5fd00218cb90e9ceea",
-        "version" : "0.0.1"
+        "revision" : "f683364e7a615c9daa33f66b61a4a923cc0742c4",
+        "version" : "0.0.2"
       }
     },
     {
@@ -16,6 +16,15 @@
       "location" : "https://github.com/pakLebah/ANSITerminal.git",
       "state" : {
         "revision" : "8e24fab68c660eca1244a95019ec69a11400d62b",
+        "version" : "0.0.3"
+      }
+    },
+    {
+      "identity" : "swiftclui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/anconaesselmann/SwiftCLUI",
+      "state" : {
+        "revision" : "6ba6d183e79949922b8972f64304c4775ca39187",
         "version" : "0.0.3"
       }
     }

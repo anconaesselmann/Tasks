@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B7D523750498E081 /* SwiftCLUI */; };
 		3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D8995C565A9F8DDEED5 /* ANSITerminal */; };
 		97234EAA2C261B3F00B363EE /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97234EA92C261B3F00B363EE /* Tasks.swift */; };
+		3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B7D523750498E081 /* SwiftCLUI */; };
+		3EA97D89957D4067B96F2BC3 /* Ansi256Color in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA97D89B96F2BC37269FB0F /* Ansi256Color */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,7 @@
 			files = (
 				3EA97D89DD3E4DB795C565A9 /* ANSITerminal in Frameworks */,
 				3EA97D8920D84501B7D52375 /* SwiftCLUI in Frameworks */,
+				3EA97D89957D4067B96F2BC3 /* Ansi256Color in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,7 @@
 			packageProductDependencies = (
 				3EA97D8995C565A9F8DDEED5 /* ANSITerminal */,
 				3EA97D89B7D523750498E081 /* SwiftCLUI */,
+				3EA97D89B96F2BC37269FB0F /* Ansi256Color */,
 			);
 			productName = Tasks;
 			productReference = 97234EA62C261B3F00B363EE /* Tasks */;
@@ -116,7 +119,8 @@
 			mainGroup = 97234E9D2C261B3F00B363EE;
 			packageReferences = (
 				DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */,
-				180E894057325D7B10548D02 /* XCLocalSwiftPackageReference "/Users/axelanconaesselmann/dev/SwiftCLUI" */,
+				957D4067B96F2BC37269FB0F /* XCRemoteSwiftPackageReference "Ansi256Color" */,
+				20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */,
 			);
 			productRefGroup = 97234EA72C261B3F00B363EE /* Products */;
 			projectDirPath = "";
@@ -302,13 +306,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		180E894057325D7B10548D02 /* XCLocalSwiftPackageReference "/Users/axelanconaesselmann/dev/SwiftCLUI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = /Users/axelanconaesselmann/dev/SwiftCLUI;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		DD3E4DB795C565A9F8DDEED5 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -316,6 +313,22 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.0.3;
+			};
+		};
+		20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/anconaesselmann/SwiftCLUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		957D4067B96F2BC37269FB0F /* XCRemoteSwiftPackageReference "Ansi256Color" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/anconaesselmann/Ansi256Color";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -328,7 +341,13 @@
 		};
 		3EA97D89B7D523750498E081 /* SwiftCLUI */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 20D84501B7D523750498E081 /* XCRemoteSwiftPackageReference "SwiftCLUI" */;
 			productName = SwiftCLUI;
+		};
+		3EA97D89B96F2BC37269FB0F /* Ansi256Color */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 957D4067B96F2BC37269FB0F /* XCRemoteSwiftPackageReference "Ansi256Color" */;
+			productName = Ansi256Color;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
