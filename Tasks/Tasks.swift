@@ -11,7 +11,9 @@ struct TodoApp: App {
     var body: some View {
         VStack(spacing: 2) {
             Text("Tasks app")
-            Picker(elements: tasks)
+            Picker(elements: tasks) {
+                Environment.shared.appState.send(.success(.value($0)))
+            }
         }
     }
 }
